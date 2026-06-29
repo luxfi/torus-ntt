@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="torus-ntt" width="880"></p>
+
 # Torus NTT
 
 High-performance Number Theoretic Transform (NTT) library for FHE operations.
