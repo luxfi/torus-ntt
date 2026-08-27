@@ -442,7 +442,7 @@ impl Plan {
                         }
                     }
                     // we optimize this path in particular because it corresponds to a possibly hot
-                    // loop in tfhe-rs (ntt pbs with modulus = product of two u32 primes < 2^31)
+                    // loop in the reference implementation (ntt pbs with modulus = product of two u32 primes < 2^31)
                     InvMode::Accumulate => {
                         #[cfg(any(target_arch = "x86", target_arch = "x86_64"))]
                         {
