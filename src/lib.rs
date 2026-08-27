@@ -1,4 +1,4 @@
-//! Concrete-NTT is a pure Rust high performance number theoretic transform library that processes
+//! Torus-NTT is a pure Rust high performance number theoretic transform library that processes
 //! vectors of sizes that are powers of two.
 //!
 //! This library provides three kinds of NTT:

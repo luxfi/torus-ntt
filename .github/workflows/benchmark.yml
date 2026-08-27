@@ -75,7 +75,7 @@ jobs:
           COMMIT_DATE="$(git --no-pager show -s --format=%cd --date=iso8601-strict ${{ github.sha }})"
           COMMIT_HASH="$(git describe --tags --dirty)"
           python3 ./ci/benchmark_parser.py target/criterion ${{ env.RESULTS_FILENAME }} \
-          --database concrete_ntt \
+          --database torus_ntt \
           --hardware "hpc7a.96xlarge" \
           --project-version "${COMMIT_HASH}" \
           --branch ${{ github.ref_name }} \
@@ -129,7 +129,7 @@ jobs:
         uses: rtCamp/action-slack-notify@b24d75fe0e728a4bf9fc42ee217caa686d141ee8
         env:
           SLACK_COLOR: ${{ job.status }}
-          SLACK_MESSAGE: "concrete-ntt benchmarks failed. (${{ env.ACTION_RUN_URL }})"
+          SLACK_MESSAGE: "torus-ntt benchmarks failed. (${{ env.ACTION_RUN_URL }})"
 
   teardown-ec2:
     name: Teardown EC2 instance (ntt-benchmarks)

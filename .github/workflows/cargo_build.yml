@@ -1,4 +1,4 @@
-# Build concrete-ntt
+# Build torus-ntt
 name: Cargo Build
 
 on:

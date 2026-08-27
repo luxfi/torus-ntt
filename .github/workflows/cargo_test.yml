@@ -1,4 +1,4 @@
-# Test concrete-ntt
+# Test torus-ntt
 name: Cargo Test
 
 on:
