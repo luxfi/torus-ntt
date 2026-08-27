@@ -1,7 +1,0 @@
-# Native CI for this crate, on the git.hanzo.ai runner fleet.
-test:
-  - name: crate
-    run: |
-      set -e
-      cargo build --locked
-      cargo test --locked
